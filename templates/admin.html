@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-
 <html>
 	<head>
 		<title></title>
@@ -11,47 +10,41 @@
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
+			<header id="header">
+				<!-- Header content goes here -->
+			</header>
 
-			<!-- Header -->
-				<header id="header">
-				
+			<section id="main" class="container medium">
+				<header>
+					<!-- Main header content goes here -->
 				</header>
-			<!-- Main -->
-				<section id="main" class="container medium">
-					<header>
-					</header>
-					
-					<div class="box">
-						<form method="post" action="admin.php" style="text-align: center;">
-							<h2>ADMIN LOGIN</h2>
-							<div class="row gtr-50 gtr-uniform">
-								<div class="col-6 col-12-mobilep">
-									<input type="text" name="name" id="name" value="" placeholder="Username" disabled/>
-								</div>
-								<div class="col-6 col-12-mobilep">
-									<input type="password" name="txtPassword" id="email" value="" 
-									placeholder="Password" disabled/>
-								</div>	
-								<div class="col-12">
-									<br>
-									<ul class="actions special">
-										<li><input type="submit" value="Login" disabled/></li>
-									</ul>
-								</div>
+
+				<div class="box">
+					<form id="loginForm" style="text-align: center;">
+						<h2>ADMIN LOGIN</h2>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-6 col-12-mobilep">
+								<input type="text" name="name" id="name" value="" placeholder="Username" />
 							</div>
-						</form>
-					</div>
-				</section>
+							<div class="col-6 col-12-mobilep">
+								<input type="password" name="txtPassword" id="password" value="" placeholder="Password" />
+							</div>
+							<div class="col-12">
+								<br>
+								<ul class="actions special">
+									<li><input type="button" value="Login" onclick="validateLogin()" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
 
-			<!-- Footer -->
-			
 			<footer id="footer">
-					
+				<!-- Footer content goes here -->
 			</footer>
+		</div>
 
-	</div>
-
-	<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.dropotron.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -59,11 +52,23 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		
-		<script>alert("This site under the construct until spring semester. Please login as an user.")</script>
 
-</body>
+		<script>
+			function validateLogin() {
+				// Burada giriş bilgilerini kontrol etmek için gerekli işlemleri yapabilirsiniz.
+				// Örneğin, AJAX ile sunucuya istek gönderip kontrol sağlanabilir.
+
+				// Örnek kontrol:
+				var username = document.getElementById("name").value;
+				var password = document.getElementById("password").value;
+
+				if (username === "admin" && password === "password") {
+					// Doğrulama başarılı ise, kullanıcıyı data.html sayfasına yönlendir.
+					window.location.href = "data.html";
+				} else {
+					alert("Invalid username or password. Please try again.");
+				}
+			}
+		</script>
+	</body>
 </html>
-
-
-
