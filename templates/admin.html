@@ -22,21 +22,27 @@
 					</header>
 					
 					<div class="box">
-						<form method="post" action="admin.php" style="text-align: center;">
+						{% if error %}
+							<p style="color: red">{{error}}</p>
+						{% endif %}
+
+
+						<form method="post" action="{{url_for('admin_page')}}" style="text-align: center;">
 							<h2>ADMIN LOGIN</h2>
 							<div class="row gtr-50 gtr-uniform">
 								<div class="col-6 col-12-mobilep">
-									<input type="text" name="name" id="name" value="" placeholder="Username" disabled/>
+									<input type="text" name="username" id="username" placeholder="Username" required/>
 								</div>
 								<div class="col-6 col-12-mobilep">
-									<input type="password" name="txtPassword" id="email" value="" 
-									placeholder="Password" disabled/>
+									<input type="password" name="password" id="password" 
+									placeholder="Password" required/>
 								</div>	
 								<div class="col-12">
-									<br>
-									<ul class="actions special">
-										<li><input type="submit" value="Login" disabled/></li>
-									</ul>
+									<input class="button" value="Login" type="submit"/>
+									<!--<br>-->
+									<!--<ul class="actions special">-->
+										<!--<li><a href="{{ url_for('filter_page') }}" class="button">Login</a></li>-->
+									<!--</ul>-->
 								</div>
 							</div>
 						</form>
@@ -59,8 +65,6 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		
-		<script>alert("This site under the construct until spring semester. Please login as an user.")</script>
 
 </body>
 </html>
