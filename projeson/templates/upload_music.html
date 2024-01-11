@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+
+</head>
+<body>
+    <div id="banner" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h2>Choose Your File</h2>
+        <div style="display: flex; justify-content: space-between; flex-direction: column;">
+            <form id="file" action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="fileInput" accept="all"/>
+            <button type="submit" class="button">Upload</button>
+        </form>
+            
+        </div>
+
+    </div>
+</body>
+<footer id="banner"></footer>
+</html>
