@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+	</head>
+	<body class="landing is-preload">
+		
+		<div id="page-wrapper">
+
+			<!-- Header -->
+
+			<!-- Banner -->
+				<section id="banner">
+					<h2>LOGIN</h2>
+					<p></p>
+					<ul class="actions special">
+						<li><a href="{{ url_for('choose_page') }}" class="button primary">I am user.</a></li>
+						<li><a href="{{ url_for('admin_page') }}" class="button">I am admin.</a></li>
+					</ul>
+				</section>
+
+			<!-- Footer -->
+			<footer id="banner">					
+			</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+
+</body>
+</html>
