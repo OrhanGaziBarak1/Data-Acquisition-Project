@@ -1,4 +1,4 @@
-**User Manual**
+[**User Manual**
 
 **Project Name: AGENT BASED FIND POPULARITY OF MUSIC WITH DATA ACQUISITION**
 
@@ -108,4 +108,4 @@ Our admin page’s html codes:
 
 ![](file:///C:\Users\ORHANG~1\AppData\Local\Temp\ksohtml7280\wps25.jpg) 
 
-In our project users can upload their songs’ files for now. We will develop other features at future.
+In our project users can upload their songs’ files for now. We will develop other features at future.](https://github.com/OrhanGaziBarak1/Data-Acquisition-Project)https://github.com/OrhanGaziBarak1/Data-Acquisition-Project
