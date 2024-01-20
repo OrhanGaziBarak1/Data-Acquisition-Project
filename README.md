@@ -1,5 +1,3 @@
-# Project ReadMe
-
 ## Welcome to Find Music Popularity
 
 Thank you for choosing our platform to showcase your musical talent! Follow these simple steps to make the most of your experience.
