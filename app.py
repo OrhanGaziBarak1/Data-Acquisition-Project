@@ -66,8 +66,8 @@ def upload_file():
 
 
 # Spotify API kimlik bilgileri
-client_id = 'b5b1962b7e8a450d854a87687e2f5e9f'
-client_secret = 'b0718fca938949eb9245485e8abbf3dc'
+client_id = '0be9e7e75740419ba4782c57ea17b19b'
+client_secret = '766748eb229b4470934df987a9089f99'
 
 # Playlist URL
 playlist_links = [
